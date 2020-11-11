@@ -1,0 +1,34 @@
+$color-primary:#f9b500;
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    margin: auto;
+}
+
+.media {
+    color: #000;
+
+    h5 {
+        font-size: 1.1rem;
+    }
+}
+
+a {
+    text-decoration: none !important;
+    transition: all .2s;
+
+    &:hover {
+        color: $color-primary !important;
+    }
+}
+
+i {
+    color: $color-primary;
+}

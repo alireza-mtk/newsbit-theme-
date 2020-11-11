@@ -1,0 +1,123 @@
+.navbar-brand {
+    img {
+        transition-duration: all 1s !important;
+
+        @media (max-width:768px) {
+            width: 75%;
+        }
+    }
+}
+
+#search-input {
+    height: 45px;
+    position: absolute;
+    top: 7px;
+    left: 50px;
+    width: auto;
+    right: 15px;
+    user-select: none;
+
+    input {
+        border: none;
+        background-color: rgb(247, 245, 248);
+    }
+}
+
+.card {
+    margin: 4px 0;
+    user-select: none;
+    padding: 0 !important;
+    overflow: hidden;
+    height: auto;
+    border: 0;
+    border-radius: 0;
+
+    img {
+        margin: -8% 0;
+
+        @media (max-width:992px) {
+            margin: 0;
+        }
+    }
+
+    &-img-overlay {
+        height: 100%;
+        color: white;
+        background-color: rgba($color: #000000, $alpha: .5);
+        display: flex;
+        flex-flow: column;
+        justify-content: flex-end;
+        padding-bottom: 0;
+
+        h5 {
+            font-size: 1rem;
+            line-height: 180%;
+            margin-bottom: 10px;
+        }
+    }
+}
+
+.info-bar {
+    list-style: none;
+    font-size: .8rem;
+    font-family: yekanf;
+
+    li {
+        display: inline-block;
+        margin-left: 15px;
+
+    }
+}
+
+.title {
+    position: relative;
+    padding-bottom: 20px;
+    margin-bottom: 40px;
+
+    &::after {
+        content: '';
+        position: absolute;
+        border-bottom: 1px solid #ccc;
+        width: 100%;
+        top: 54px;
+        right: 0;
+    }
+
+    &::before {
+        content: '';
+        position: absolute;
+        border-bottom: 5px solid $color-primary;
+        width: 80px;
+        top: 50px;
+        z-index: 1;
+    }
+}
+
+.article-title {
+    display: inline-block;
+    margin-top: 20px;
+    padding-bottom: 10px;
+    font-size: 18px;
+    font-weight: 600;
+    color: #000000;
+    width: 200px;
+}
+
+.text-muted b {
+    font-size: .9rem;
+    color: black;
+}
+
+.input-group {
+    .form-control:first-child {
+        border-top-right-radius: 0 !important;
+        border-bottom-right-radius: 0 !important;
+    }
+
+    .input-group-append {
+        .btn:last-child {
+            border-top-left-radius: 0 !important;
+            border-bottom-left-radius: 0 !important;
+        }
+    }
+}
